@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        /* Basic styling here */
+        .calculator {
+            width: 200px;
+            margin: auto;
+        }
+
+        .display {
+            width: 100%;
+            height: 40px;
+            background-color: lightgray;
+            text-align: right;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 1.5em;
+        }
+
+        .button {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            font-size: 1.5em;
+        }
+
+        .button-row {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="button-row">
+            <button class="button" data-number="7">7</button>
+            <button class="button" data-number="8">8</button>
+            <button class="button" data-number="9">9</button>
+            <button class="button" data-operator="/">/</button>
+        </div>
+        <div class="button-row">
+            <button class="button" data-number="4">4</button>
+            <button class="button" data-number="5">5</button>
+            <button class="button" data-number="6">6</button>
+            <button class="button" data-operator="*">*</button>
+        </div>
+        <div class="button-row">
+            <button class="button" data-number="1">1</button>
+            <button class="button" data-number="2">2</button>
+            <button class="button" data-number="3">3</button>
+            <button class="button" data-operator="-">-</button>
+        </div>
+        <div class="button-row">
+            <button class="button" data-number="0">0</button>
+            <button class="button" data-clear="clear">C</button>
+            <button class="button" data-operator="=">=</button>
+            <button class="button" data-operator="+">+</button>
+        </div>
+    </div>
+
+    <script src="calcjs.js"></script>
+</body>
+</html>
